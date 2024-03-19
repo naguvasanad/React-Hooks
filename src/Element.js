@@ -7,7 +7,7 @@ const Element = () => {
   return (
     <div>
       <h1>Hello</h1>
-      <h1>{fname}</h1>
+      <h1>Hello{fname}</h1>
     </div>
   )
 }
