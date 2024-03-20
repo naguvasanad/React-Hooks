@@ -1,14 +1,18 @@
   import Home from './Home';
 import { MyContext } from './MyContext';
+
 export default function App() {
   
-  //const FirstName = createContext();
-  
+  // const [user,setUSer] = useState({name:"nagu",place:"Koppal"});
+  const user = {    
+    name:"nagu",
+    place:"koppal"
+    }
 
   return (
     <>
 
-      <MyContext.Provider value={"Vasanad"}>
+      <MyContext.Provider value={user}>
             <Home />
       </MyContext.Provider>
      
