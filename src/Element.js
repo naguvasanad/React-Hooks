@@ -1,14 +1,23 @@
 import React, { useContext } from 'react'
 import { MyContext } from './MyContext'; 
+
 const Element = () => {
 
-    const fname = useContext(MyContext);
+ 
+
+    const user = useContext(MyContext);
 
   return (
-    <div>
+   <>
       <h1>Hello</h1>
-      <h1>Hello{fname}</h1>
-    </div>
+      
+      <div>
+      <h1>{user.name}</h1>
+      <p>{user.place}</p>
+      </div>
+      
+      
+    </>
   )
 }
 
